@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<heead>
+
+<script>
+    function CalculaPrecio() {
+        let precio = parseFloat(document.getElementById("txtPrecio").value);
+        let peso = parseFloat(document.getElementById("txtPeso").value);
+        
+        document.getElementById("salida").innerHTML = "Precio: " + precio;
+    }
+</script>
+</head>
+
+<body>
+<p>Precio inicial: <input id="txtPrecio" type="text" value="5"></p>
+<p>Introduce peso del paquete: <input id="txtPeso" type="text" value="0"></p>
+
+
+<input id="Ejecuta" type="button" value="Calcula" onclick="CalculaPrecio()" />
+
+<p id="salida"></p>
+
+</body>
+</html>
